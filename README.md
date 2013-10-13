@@ -1,3 +1,11 @@
+# Setup of Craigslist Jr application:
+bundle
+require 'active_record'
+rake tdd_it   => fails on Failure/Error: ItemsTable.
+              table_exists?.should == true
+rake db:create_migration NAME=create_items
+rake db:migrate
+
 # Craigslist Jr
 1. [Learning Objectives](#learning-objectives)
 2. [Project Summary](#summary)
