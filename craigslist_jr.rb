@@ -4,8 +4,7 @@ require 'active_record'
 
 set :database, "sqlite3:///db/item.db"
 
-class Item < ActiveRecord::Base
-end
+require './models/item'
 
 get '/' do
   p "Craigslist Jr"
