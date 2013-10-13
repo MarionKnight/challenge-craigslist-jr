@@ -7,6 +7,10 @@ set :database, "sqlite3:///db/item.db"
 class Item < ActiveRecord::Base
 end
 
+get '/' do
+  p "Craigslist Jr"
+end
+
 class Item_O
   attr_accessor :title, :description, :price
   def title
